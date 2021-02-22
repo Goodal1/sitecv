@@ -1,0 +1,51 @@
+:root {
+    --dark1: #26283B;
+    --dark2: #0E0000;
+  }
+
+*{
+    margin:0;
+    padding:0
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;800&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+    color:#fff
+}
+
+header{
+    background: var(--dark1);
+    display: grid;
+    grid-template-columns: 10% 1fr 20%;
+    font-size:1rem
+}
+
+header img{
+    max-height: 35px;
+}
+
+header>*, header ul{
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+header ul{
+    list-style-type: none;
+    justify-content: space-evenly;
+    width:60%;
+    margin:auto
+}
+
+
+.menu-container{
+    font-size:14px;
+    font-weight:600;
+    padding:20px 0px
+}
+
+.darkmode-container{
+   font-size:.8rem
+}
