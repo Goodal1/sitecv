@@ -1,0 +1,41 @@
+@media screen and (max-width:1040px){
+
+    header{
+        grid-template-columns: 10% 1fr 30%;
+        font-size:1rem
+    }
+}
+
+@media screen and (max-width:690px){
+
+    body{
+        position:relative
+    }
+
+    header{
+        grid-template-columns:1fr;
+        font-size:1rem;
+        background: none;
+        min-height: 5rem;
+    }
+
+    header img {
+        max-height: 100%;
+    }
+
+    .menu-container, .darkmode-container{
+        display:none;
+    }
+
+    .burger-container{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        position:absolute;
+        top:0px;
+        left:0px;
+        height:5rem;
+        width:60px;
+    }
+
+}

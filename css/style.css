@@ -40,7 +40,8 @@ header{
 
 .burger{
     display:block;
-    width:60%
+    width:60%;
+    transform-origin: left;
 }
 
 .burger div{
@@ -116,13 +117,15 @@ header li a:hover{
 /*--menu mobile--*/
 
 .menu-mobile{
-    max-width: 66vw;
+    width: 66vw;
     background: var(--dark1);
     height: 100vh;
     box-sizing: border-box;
     position: absolute;
     top: 0px;
-    left: -66vw;
+    transform:translateX(-100%) scale(.5);
+    transition: transform .2s ease-in;
+    box-shadow:0px 0px 55px #630e996b
 }
 
 .close-container{
@@ -130,8 +133,14 @@ header li a:hover{
 }
 
 .close-container img{
-    max-height:25px;
+    max-height:35px;
     padding:1rem
+}
+
+.close-container img:hover{
+    transform: scale(1.1);
+    transition: ease-in;
+    cursor:pointer
 }
 
 .links-container{
@@ -143,6 +152,17 @@ header li a:hover{
     padding: 2rem 0;
     border-top: 1px dashed #38384a;
     font-weight: 900;
+    font-size:.9rem
+}
+
+.links-container li a{
+    color:var(--white);
+    text-decoration: none;
+}
+
+.links-container li a:hover{
+    color:var(--red);
+    transition-duration: 4s;
 }
 
 .links-container li:nth-child(1){
@@ -196,4 +216,29 @@ input:checked + label:after {
 
 label:active:after {
 	width: 130px;
+}
+
+/*--MAIN BANNER --*/
+
+.main-banner{
+    height: 80vh;
+    overflow: hidden;
+    display: flex;
+    flex:1;
+    align-items:center;
+    justify-content: center
+}
+
+
+main img{
+    height:85vh;
+    width:auto;
+    transform:translateY(20vh);
+}
+
+/*--PRESENTATION --*/
+
+.presentation{
+    background: var(--dark2);
+    padding:5rem
 }

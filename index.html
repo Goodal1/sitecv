@@ -4,29 +4,59 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mediaqueries.css">
     <title>Document</title>
 </head>
 <body>
+    <div class="burger-container">
+        <div class="burger">
+             <div></div>
+             <div></div>
+             <div></div>
+        </div>
+     </div>
+    <div class="menu-mobile">
+        <div class="close-container">
+            <img src="img/icons/ic-close.svg" alt="" class="close">
+        </div>
+        <div class="links-container">
+            <ul>
+                <li><a href="#">Présentation</a></li>
+                <li><a href="#">Expérience</a></li>
+                <li><a href="#">Portofolio</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+    
+
     <header>
-        <div class="logo-container"><img src="https://upload.wikimedia.org/wikipedia/commons/d/d2/Firefox_Logo%2C_2017.png" alt=""></div>
+        <div class="logo-container"><img src="img/logo.png" alt=""></div>
         <div class="menu-container">
             <ul>
-                <li>Présentation</li>
-                <li>Expérience</li>
-                <li>Porfolio</li>
-                <li>Contact</li>
+                <li><a href="#">Présentation</a></li>
+                <li><a href="#">Expérience</a></li>
+                <li><a href="#">Porfolio</a></li>
+                <li><a href="#">Contact</a></li>
             </ul>
         </div>
         <div class="darkmode-container">
-            <input type="checkbox" name="" id="">Darkmode
+            <input type="checkbox" name="" id="darkmode">
+            <label for="darkmode">Darkmode</label>
         </div>
 
     </header>
     <main>
         <section class="main-banner">
-            <div class="main-banner-robot"><img src="https://upload.wikimedia.org/wikipedia/commons/d/d2/Firefox_Logo%2C_2017.png" alt=""></div>
+            <div class="main-banner-robot"><img src="img/walle.png" alt=""></div>
+            <div class="main-banner-text"><span>coucou</span><h1>Couou lorem ipsum</h1></div>
+        </section>
+        <section class="presentation">
+            <h2>Lorem ipsum</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </section>
     </main>
+    <script src="js/menu-mobile.js"></script>
 </body>
 </html>
