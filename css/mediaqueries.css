@@ -6,6 +6,27 @@
     }
 }
 
+@media screen and (max-width:970px){
+
+    .main-banner{
+        grid-template-columns: 10% 1fr;
+        background:linear-gradient();
+    }
+
+    .main-banner p{
+        display: inline-block;
+        background: #000000bd;
+        max-width: max-content;
+        padding: 10px;
+    }
+
+    
+
+    .main-banner img{
+        opacity:.25
+    }
+}
+
 @media screen and (max-width:690px){
 
     body{
@@ -29,13 +50,20 @@
 
     .burger-container{
         display:flex;
-        align-items: center;
-        justify-content: center;
-        position:absolute;
-        top:0px;
-        left:0px;
-        height:5rem;
-        width:60px;
+        
+    }
+
+    .main-banner{
+        grid-template-columns: 1fr;
+        height: auto;
+    }
+
+    .main-banner-robot{
+        display: none;
+    }
+
+    .main-banner-text{
+        padding:4rem 2rem;
     }
 
 }

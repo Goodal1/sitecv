@@ -2,7 +2,9 @@
     --dark1: #26283B;
     --dark2: #0E0000;
     --red:#F81475;
-    --white:#fff
+    --white:#fff;
+    --purple1:#C279EB;
+    --purple2:#4D1058
   }
 
 *{
@@ -36,6 +38,13 @@ header{
 
 .burger-container{
     display:none;
+    align-items: center;
+    justify-content: center;
+    position:absolute;
+    top:0px;
+    left:0px;
+    height:5rem;
+    width:60px;
 }
 
 .burger{
@@ -125,7 +134,8 @@ header li a:hover{
     top: 0px;
     transform:translateX(-100%) scale(.5);
     transition: transform .2s ease-in;
-    box-shadow:0px 0px 55px #630e996b
+    box-shadow:4px 3px 14px #08153a;
+    z-index:99
 }
 
 .close-container{
@@ -223,10 +233,12 @@ label:active:after {
 .main-banner{
     height: 80vh;
     overflow: hidden;
-    display: flex;
-    flex:1;
-    align-items:center;
-    justify-content: center
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.main-banner-robot{
+    text-align:center
 }
 
 
@@ -234,6 +246,33 @@ main img{
     height:85vh;
     width:auto;
     transform:translateY(20vh);
+    transition-duration: 1s;
+    pointer-events: none;
+}
+
+.main-banner-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index:2
+}
+
+h1{
+    font-weight:900;
+    font-size:50px;
+    text-transform: uppercase;
+    text-shadow: 4px 3px 3px #08153a;
+}
+
+.main-banner p span{
+    background-color: var(--purple2);
+    color:var(--purple1);
+    font-weight:900
+}
+
+h1 span{
+    color:var(--red);
+    font-size:37px
 }
 
 /*--PRESENTATION --*/

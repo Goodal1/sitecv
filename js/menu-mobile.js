@@ -14,3 +14,20 @@ function deployMenu(){
 
 deployMenu();
 
+const main = document.querySelector('.main-banner');
+main.addEventListener('mouseover', function(e){
+    let walk = e.x/10;
+    document.querySelector('#robot').style.transform=`translateX(${walk}px) translateY(20%) rotate(10deg)`
+})
+
+main.addEventListener('mouseout', function(e){
+    document.querySelector('#robot').style.transform=`translateX(0px) translateY(25%) rotate(0deg)`
+})
+
+const darkmode = document.querySelector('#darkmode');
+darkmode.addEventListener('click',function(){
+    document.documentElement.style.setProperty('--dark1', '#fff');
+    document.documentElement.style.setProperty('--dark2', '#F4F7F6')
+    document.documentElement.style.setProperty('--white', '#000');
+
+})
