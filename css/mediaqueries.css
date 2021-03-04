@@ -1,3 +1,14 @@
+/*--BODY--*/
+@media screen and (max-width:690px){
+
+    body{
+        position:relative
+    }
+}
+
+/*--HEADER--*/
+
+
 @media screen and (max-width:1040px){
 
     header{
@@ -5,6 +16,40 @@
         font-size:1rem
     }
 }
+
+@media screen and (max-width:690px){
+
+    header{
+        grid-template-columns:1fr;
+        font-size:1rem;
+        background: none;
+        min-height: 5rem;
+    }
+
+    header img {
+        max-height: 100%;
+    }
+
+    .menu-container, .darkmode-container{
+        display:none;
+    }
+
+    .burger-container{
+        display:flex;
+        
+    }
+}
+
+
+/*--NAVIGATION FLOTTANTE--*/
+@media screen and (max-width:970px){
+
+    .navig-right{
+        display: none;
+    }
+}
+
+/*--MAIN BANNER--*/
 
 @media screen and (max-width:970px){
 
@@ -29,30 +74,6 @@
 
 @media screen and (max-width:690px){
 
-    body{
-        position:relative
-    }
-
-    header{
-        grid-template-columns:1fr;
-        font-size:1rem;
-        background: none;
-        min-height: 5rem;
-    }
-
-    header img {
-        max-height: 100%;
-    }
-
-    .menu-container, .darkmode-container{
-        display:none;
-    }
-
-    .burger-container{
-        display:flex;
-        
-    }
-
     .main-banner{
         grid-template-columns: 1fr;
         height: auto;
@@ -64,6 +85,27 @@
 
     .main-banner-text{
         padding:4rem 2rem;
+    }
+
+}
+
+/*--PRESENTATION--*/
+
+@media screen and (max-width:970px){
+    .prez-texte, .prez-icones{
+        padding:0;
+    }
+}
+
+@media screen and (max-width:690px){
+
+    .prez{
+        padding:4rem 2rem;
+        display: block;
+    }
+
+    .prez-texte, .prez-icones{
+        padding:0;
     }
 
 }
