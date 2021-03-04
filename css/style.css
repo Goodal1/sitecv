@@ -24,6 +24,19 @@ body{
     overflow-x: hidden;
 }
 
+
+/*----COMMUNS-----*/
+
+.btn-red{
+    background:var(--red);
+    color:#fff;
+    font-size:16px;
+    text-decoration: none;
+    padding:15px;
+    border-radius: 2px;
+    margin:36px 0;
+}
+
 /*-----HEADER------*/
 
 header{
@@ -242,7 +255,7 @@ label:active:after {
 }
 
 
-main img{
+#robot{
     height:85vh;
     width:auto;
     transform:translateY(20vh);
@@ -277,7 +290,58 @@ h1 span{
 
 /*--PRESENTATION --*/
 
-.presentation{
+.prez{
     background: var(--dark2);
-    padding:5rem
+    padding:5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.prez h2{
+    font-size: 40px;
+    margin-bottom:40px;
+}
+
+.prez h2 span{
+    border-bottom:6px solid red;
+}
+
+.prez >*{
+    padding: 0 4rem;
+}
+
+.prez p{
+    margin:18px 0;
+}
+
+.prez p:last-child{
+    margin:36px 0;
+}
+
+
+.prez-icones {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.prez li {
+    list-style-type: none;
+    background: var(--dark1);
+    display: inline-flex;
+    height: 75px;
+    width: 75px;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 2px;
+    margin: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.prez img{
+    width: 80%;
+    height: auto
 }
