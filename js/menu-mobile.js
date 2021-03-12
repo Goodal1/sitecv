@@ -57,6 +57,18 @@ function darkMode(){
 //XPSLIDER
 
 
+const endpoint = 'https://raw.githubusercontent.com/Goodal1/sitecv/274ebcb39996c69961c0e9859544c962d4869ae3/js/data2.json';
+
+let origin;
+
+
+fetch(endpoint).then(blob => blob.json())
+               .then(data => origin=data)
+               .then(console.log(origin));
+
+
+
+
 function buildSlider(id,xp){
     const sliderContainer = document.querySelector(`.${id}-slider-container`);
     for (var i = 0; i < xp.length; i++) {
@@ -115,41 +127,42 @@ function buildSlider(id,xp){
             
         })
     }
-    buildSlider('xp',xp);
-    buildSlider('form',form);
 
-    animateSlider('xp');
-    animateSlider('form');
+/*buildSlider('xp',xp);
+buildSlider('form',form);
 
-
-
-
-const xps = document.querySelectorAll('.xp-slider-container div');
-
-xps.forEach(ele=>ele.addEventListener('mouseover',function(e){
-    const cible = this.dataset.experience;
-    const targets = document.querySelectorAll(`.${cible}`);
-    targets.forEach(ele => {
-        ele.classList.add('active');
-    })
-
-}))
-
-xps.forEach(ele=>ele.addEventListener('mouseout',function(e){
-    const cible = this.dataset.experience;
-    const targets = document.querySelectorAll(`.${cible}`);
-    targets.forEach(ele => {
-        ele.classList.remove('active');
-    })
-
-}))
+animateSlider('xp');
+animateSlider('form');*/
 
 
 
 
+// const xps = document.querySelectorAll('.xp-slider-container div');
+
+// xps.forEach(ele=>ele.addEventListener('mouseover',function(e){
+//     const cible = this.dataset.experience;
+//     const targets = document.querySelectorAll(`.${cible}`);
+//     targets.forEach(ele => {
+//         ele.classList.add('active');
+//     })
+
+// }))
+
+// xps.forEach(ele=>ele.addEventListener('mouseout',function(e){
+//     const cible = this.dataset.experience;
+//     const targets = document.querySelectorAll(`.${cible}`);
+//     targets.forEach(ele => {
+//         ele.classList.remove('active');
+//     })
+
+// }))
 
 
 
-deployMenu();
-moveRobot();
-darkMode();
+
+
+
+
+// deployMenu();
+// moveRobot();
+// darkMode();

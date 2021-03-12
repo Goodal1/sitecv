@@ -380,7 +380,12 @@ label:active:after {
     margin: 10px;
     align-items: center;
     justify-content: center;
-    border:1px solid var(--lineDark)
+    border:1px solid var(--lineDark);
+    transition: all .4s
+}
+
+.prez li:hover {
+    transform: rotate(15deg);
 }
 
 
