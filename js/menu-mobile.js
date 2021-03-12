@@ -93,12 +93,12 @@ function fetchSliderData(url){
 function buildSlider(id,bdd){
     const sliderContainer = document.querySelector(`.${id}-slider-container`);
     for (var i = 0; i < xp.length; i++) {
-        const date = `<p class=".${id}-date">${bdd[i].date}</p>`;
+        const date = `<p class="${id}-date">${bdd[i].date}</p>`;
         const titre = `<h3>${bdd[i].titre}</h3>`;
-        const boite = `<p class=".${id}-boite">${bdd[i].boite}</p>`;
-        const lien = `<p class=".${id}-lien"><a href="${bdd[i].lien}">En savoir plus</a></p>`;
+        const boite = `<p class="${id}-boite">${bdd[i].boite}</p>`;
+        const lien = `<p class="${id}-lien"><a href="${bdd[i].lien}">En savoir plus</a></p>`;
         const tagsList = Array.from(bdd[i].tags.split(','));
-        const tags = tagsList.map(tag => `<span class=".${id}-tag">${tag}</span>`).join('');
+        const tags = tagsList.map(tag => `<span class="${id}-tag">${tag}</span>`).join('');
     
         const textnode = document.createElement('div');
         textnode.innerHTML=`${date}${titre}${boite}${tags}${lien}`;
