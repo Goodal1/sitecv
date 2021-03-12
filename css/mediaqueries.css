@@ -107,5 +107,54 @@
     .prez-texte, .prez-icones{
         padding:0;
     }
-
 }
+
+    /*--PRESENTATION--*/
+
+@media screen and (max-width:970px){
+    .prez-texte, .prez-icones{
+        padding:0;
+    }
+}
+
+@media screen and (max-width:690px){
+
+    .prez{
+        padding:4rem 2rem;
+        display: block;
+    }
+
+    .prez-texte, .prez-icones{
+        padding:0;
+    }
+
+    .xp-frise{
+        display:none
+    }
+}
+
+    /*--EXPERIENCE--*/
+
+    @media screen and (max-width:970px){
+        .xp{
+            padding:5rem 0 5rem 5rem;
+            
+        }
+
+        .xp-slider-container div{
+            min-width:50vw
+        }
+    }
+    
+    @media screen and (max-width:690px){
+    
+        .xp{
+            padding:4rem 0 4rem 2rem;
+            
+        }
+
+        .xp-slider-container div{
+            min-width:80vw
+        }
+        
+    }
