@@ -76,7 +76,6 @@ function fetchSliderData(url){
                         buildSlider('xp',xp);
                         buildSlider('form',form);
                         animateSlider('xp');
-                        animateSlider('form');
                         yearsHighlight('xp');
                         yearsHighlight('form');
                    })
