@@ -1,53 +1,89 @@
 const xp=[
 
-{
-	date:'2018-2020',
-	titre:'Jose John 1',
-	boite:'N\'Py Nouvelles Pyrénées',
-	tags:'tag1,tag2,tag3,taglong,tagpluslong,tag5,tag6',
-	lien:'maxijose.com'
+	{
+		date:'2018-2021',
+		titre:'Responsable Digital',
+		boite:'N\'Py Nouvelles Pyrénées',
+		tags:'tag1,tag2,tag3,taglong,tagpluslong,tag5,tag6',
+		lien:'maxijose.com'
 
-},
-{
-	date:'2018-2020',
-	titre:'Jose John 2',
-	boite:'N\'Py Nouvelles Pyrénées',
-	tags:'tag1,tag2,tag3,taglong,tagpluslong,tag5,tag6',
-	lien:'maxijose.com'
+	},
+	{
+		date:'2015-2018',
+		titre:'Assistant digital',
+		boite:'N\'Py Nouvelles Pyrénées',
+		tags:'tag1,tag2,tag3,taglong,tagpluslong,tag5,tag6',
+		lien:'maxijose.com'
 
-},
-{
-	date:'2018-2020',
-	titre:'Jose John 3',
-	boite:'N\'Py Nouvelles Pyrénées',
-	tags:'tag1,tag2,tag3,taglong,tagpluslong,tag5,tag6',
-	lien:'maxijose.com'
+	},
+	{
+		date:'2013-2015',
+		titre:'Responsable communication',
+		boite:'Gyromax.fr',
+		tags:'tag1,tag2,tag3,taglong,tagpluslong,tag5,tag6',
+		lien:'maxijose.com'
 
-},
-{
-	date:'2018-2020',
-	titre:'Jose John 4',
-	boite:'N\'Py Nouvelles Pyrénées',
-	tags:'tag1,tag2,tag3,taglong,tagpluslong,tag5,tag6',
-	lien:'maxijose.com'
+	},
+	{
+		date:'2012-2013',
+		titre:'Réceptionniste',
+		boite:'Hôtel Parc Beaumont',
+		tags:'tag1,tag2,tag3,taglong,tagpluslong,tag5,tag6',
+		lien:'maxijose.com'
 
-},
-{
-	date:'2018-2020',
-	titre:'Jose John 5',
-	boite:'N\'Py Nouvelles Pyrénées',
-	tags:'tag1,tag2,tag3,taglong,tagpluslong,tag5,tag6',
-	lien:'maxijose.com'
+	},
+	{
+		date:'2011-2012',
+		titre:'Réceptionniste - Alternance',
+		boite:'Le RexHotel',
+		tags:'tag1,tag2,tag3,taglong,tagpluslong,tag5,tag6',
+		lien:'maxijose.com'
 
-},
-{
-	date:'2018-2020',
-	titre:'Jose John 6',
-	boite:'N\'Py Nouvelles Pyrénées',
-	tags:'tag1,tag2,tag3,taglong,tagpluslong,tag5,tag6',
-	lien:'maxijose.com'
+	},
 
-},
+]
 
+const form=[
+
+	{
+		date:'2018-2021',
+		titre:'school',
+		boite:'N\'Py Nouvelles Pyrénées',
+		tags:'tag1,tag2,tag3,taglong,tagpluslong,tag5,tag6',
+		lien:'maxijose.com'
+
+	},
+	{
+		date:'2015-2018',
+		titre:'school2',
+		boite:'N\'Py Nouvelles Pyrénées',
+		tags:'tag1,tag2,tag3,taglong,tagpluslong,tag5,tag6',
+		lien:'maxijose.com'
+
+	},
+	{
+		date:'2013-2015',
+		titre:'Responsable communication',
+		boite:'Gyromax.fr',
+		tags:'tag1,tag2,tag3,taglong,tagpluslong,tag5,tag6',
+		lien:'maxijose.com'
+
+	},
+	{
+		date:'2012-2013',
+		titre:'Réceptionniste',
+		boite:'Hôtel Parc Beaumont',
+		tags:'tag1,tag2,tag3,taglong,tagpluslong,tag5,tag6',
+		lien:'maxijose.com'
+
+	},
+	{
+		date:'2011-2012',
+		titre:'Réceptionniste - Alternance',
+		boite:'Le RexHotel',
+		tags:'tag1,tag2,tag3,taglong,tagpluslong,tag5,tag6',
+		lien:'maxijose.com'
+
+	},
 
 ]
