@@ -92,7 +92,7 @@ function fetchSliderData(url){
 
 function buildSlider(id,bdd){
     const sliderContainer = document.querySelector(`.${id}-slider-container`);
-    for (var i = 0; i < xp.length; i++) {
+    for (var i = 0; i < bdd.length; i++) {
         const date = `<p class="${id}-date">${bdd[i].date}</p>`;
         const titre = `<h3>${bdd[i].titre}</h3>`;
         const boite = `<p class="${id}-boite">${bdd[i].boite}</p>`;
