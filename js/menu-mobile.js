@@ -57,27 +57,48 @@ function darkMode(){
 //XPSLIDER
 
 
-const endpoint = 'https://raw.githubusercontent.com/Goodal1/sitecv/274ebcb39996c69961c0e9859544c962d4869ae3/js/data2.json';
-
-let origin;
 
 
-fetch(endpoint).then(blob => blob.json())
-               .then(data => origin=data)
-               .then(console.log(origin));
+const xp=[];
+const form=[];
 
 
 
+function fetchSliderData(url){
+    const endpoint = url;
+    fetch(endpoint).then(blob => blob.json())
+                   .then(data => {
+                        xp.push(...data.experience)
+                        form.push(...data.formation)
+                                }
+                            )
+                   .then(()=>{
+                        buildSlider('xp',xp);
+                        buildSlider('form',form);
+                        animateSlider('xp');
+                        animateSlider('form');
+                        yearsHighlight('xp');
+                        yearsHighlight('form');
+                   })
+    
+}
 
-function buildSlider(id,xp){
+
+
+              
+
+
+
+
+function buildSlider(id,bdd){
     const sliderContainer = document.querySelector(`.${id}-slider-container`);
     for (var i = 0; i < xp.length; i++) {
-
-        const date = `<p class="${id}-date">${xp[i].date}</p>`;
-        const titre = `<h3>${xp[i].titre}</h3>`;
-        const boite = `<p class="${id}-boite">${xp[i].boite}</p>`;
-        const lien = `<p class="${id}-lien"><a href="${xp[i].lien}">En savoir plus</a></p>`;
-        const tagsList = Array.from(xp[i].tags.split(','));
+        console.log(bdd[i]);
+        const date = `<p class="${id}-date">${bdd[i].date}</p>`;
+        const titre = `<h3>${bdd[i].titre}</h3>`;
+        const boite = `<p class="${id}-boite">${bdd[i].boite}</p>`;
+        const lien = `<p class="${id}-lien"><a href="${bdd[i].lien}">En savoir plus</a></p>`;
+        const tagsList = Array.from(bdd[i].tags.split(','));
         const tags = tagsList.map(tag => `<span class="${id}-tag">${tag}</span>`).join('');
     
         const textnode = document.createElement('div');
@@ -90,7 +111,7 @@ function buildSlider(id,xp){
 
 
 
-    function animateSlider(id){
+function animateSlider(id){
         const sliderContainer = document.querySelector(`.${id}-slider-container`);
         const sliderElements = document.querySelectorAll(`.${id}-slider-container div`);
         let startSlide;
@@ -128,41 +149,54 @@ function buildSlider(id,xp){
         })
     }
 
-/*buildSlider('xp',xp);
-buildSlider('form',form);
+function yearsHighlight(id){
+    const xps = document.querySelectorAll(`.${id}-slider-container div`);
 
-animateSlider('xp');
-animateSlider('form');*/
+        xps.forEach(ele=>ele.addEventListener('mouseover',function(e){
+            const cible = this.dataset.experience;
+            const targets = document.querySelectorAll(`.${cible}`);
+            targets.forEach(ele => {
+                ele.classList.add('active');
+            })
 
+        }))
 
+        xps.forEach(ele=>ele.addEventListener('mouseout',function(e){
+            const cible = this.dataset.experience;
+            const targets = document.querySelectorAll(`.${cible}`);
+            targets.forEach(ele => {
+                ele.classList.remove('active');
+            })
 
-
-// const xps = document.querySelectorAll('.xp-slider-container div');
-
-// xps.forEach(ele=>ele.addEventListener('mouseover',function(e){
-//     const cible = this.dataset.experience;
-//     const targets = document.querySelectorAll(`.${cible}`);
-//     targets.forEach(ele => {
-//         ele.classList.add('active');
-//     })
-
-// }))
-
-// xps.forEach(ele=>ele.addEventListener('mouseout',function(e){
-//     const cible = this.dataset.experience;
-//     const targets = document.querySelectorAll(`.${cible}`);
-//     targets.forEach(ele => {
-//         ele.classList.remove('active');
-//     })
-
-// }))
+        }))
+}
 
 
 
 
 
+console.log(xp);
+console.log(form);
+
+fetchSliderData('https://raw.githubusercontent.com/Goodal1/sitecv/main/js/data2.json');
+  
+       
+  
 
 
-// deployMenu();
-// moveRobot();
-// darkMode();
+
+
+
+
+
+
+
+
+    
+
+
+
+
+deployMenu();
+moveRobot();
+darkMode();
