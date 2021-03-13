@@ -25,6 +25,7 @@ body{
     background-repeat: no-repeat;
     width:100%;
     overflow-x: hidden;
+    position: relative;
 }
 
 
@@ -72,28 +73,26 @@ h3{
 
 /*-----LOADER----*/
 .loader{
-    width: 100vw;
-    height:100vh;
-    background: #fff;
-    position:absolute;
-    top:0px;
-    left:0px;
-    animation:rollin 3s ease-in forwards;
-    z-index:9999999999:
-    transform:scale(4);
-    border-radius: 50%
+    /* width: 100vw; */
+    /* height: 100vh; */
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    animation: rollin 2s ease-out forwards;
+    z-index: 99: transform:scale(5);
+    transform: scale(5) translateY(-35%) translateX(0%);
 }
 
 @keyframes rollin {
     from {
-      transform: scale(4) translateY(0%) translateX(0%);
-      opacity:1;
+      transform:  scale(5) translateX(0%);
+      
 
     }
   
     to {
-        transform: scale(1) translateY(-100%) translateX(100%);
-        opacity:0;
+        transform:scale(4) translateX(100%);
+        
     }
   }
 
@@ -705,6 +704,11 @@ label:active:after {
 .xp-pop-header{
     display:grid;
     grid-template-columns: 75% 1fr;
+}
+
+.xp-pop-header .xp-lieu::before{
+    content:url(../img/icons/ic-pin.svg);
+    margin-right: 5px
 }
 
 .xp-pop-desc{
