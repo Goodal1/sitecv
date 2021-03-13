@@ -132,6 +132,7 @@ function animateSlider(id){
             drag=false;
             sliderContainer.classList.remove('active');
             this.style.cursor='';
+            
         });
 
         sliderContainer.addEventListener('mouseleave', function(){
@@ -182,7 +183,7 @@ function showPopups(id){
         }))
 
 }
-
+    
 function closePopups(){
     const closes = document.querySelectorAll('.xp-close');
     closes.forEach(ele => ele.addEventListener('click', function(){
