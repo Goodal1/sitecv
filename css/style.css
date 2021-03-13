@@ -4,7 +4,7 @@
     --line:#4d4d4d;
     --lineDark:#262738;
     --red:#F81475;
-    --white:#fff;
+    --white:#dcddde;
     --corail:#3FDDF6;
     --purple1:#C279EB;
     --purple2:#4D1058
@@ -648,6 +648,90 @@ label:active:after {
 .form-frise-joint.active{
     background:var(--red);
  }
+
+
+ /*---POPUPS---*/
+
+.xp-pop {
+    display:none;
+    position: fixed;
+    z-index: 9;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+  
+    background: var(--dark2);
+    border-radius: 30px;
+    border: 1px solid var(--line);
+    padding: 5rem;
+    box-sizing: border-box;
+}
+
+.xp-pop-content{
+    height:90%;
+    overflow-y: scroll;
+}
+
+
+.xp-pop-content::-webkit-scrollbar {
+    width: 10px;
+    border-radius: 50px;
+    padding:20px 0;
+  }
+  
+.xp-pop-content::-webkit-scrollbar-track {
+    background: transparent;
+    
+  }
+  
+
+.xp-pop-content::-webkit-scrollbar-thumb {
+    background:var(--red);
+    border-radius: 50px
+
+  }
+  
+.xp-pop-content::-webkit-scrollbar-thumb:hover {
+    background: var(--red);
+  }
+
+  .xp-close{
+    position: absolute;
+    top:5px;
+    right:5px;
+}
+
+.xp-pop-header{
+    display:grid;
+    grid-template-columns: 75% 1fr;
+}
+
+.xp-pop-desc{
+    margin:2rem 0;
+}
+
+.xp-pop-listing{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    margin:2rem 0;
+}
+
+
+.xp-pop-listing ul{
+    list-style-type: none;
+}
+
+.xp-pop-listing li{
+    line-height: 40px
+}
+
+.xp-pop-listing li::before{
+    content:url(../img/icons/ic-arrow.svg);
+    margin-right: 5px
+}
+
+
 
 
 

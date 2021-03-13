@@ -77,7 +77,9 @@ function fetchSliderData(url){
                         buildSlider('form',form);
                         animateSlider('xp');
                         yearsHighlight('xp');
-                        yearsHighlight('form');
+                        yearsHighlight('form')
+                        showPopups('xp');
+
                    })
     
 }
@@ -122,6 +124,7 @@ function animateSlider(id){
             scrollLeft = sliderContainer.scrollLeft;
             sliderContainer.classList.add('active');
             this.style.cursor='grabbing';
+            e.preventDefault();
         });
 
         sliderContainer.addEventListener('mouseup', function(e){
@@ -168,6 +171,26 @@ function yearsHighlight(id){
 
         }))
 }
+
+function showPopups(id){
+    const xps = document.querySelectorAll(`.${id}-slider-container div`);
+
+        xps.forEach(ele=>ele.addEventListener('click',function(e){
+            const cible = this.dataset.experience;
+            document.querySelector(`.pop-${cible}`).style.display='block';
+
+        }))
+
+}
+
+function closePopups(){
+    const closes = document.querySelectorAll('.xp-close');
+    closes.forEach(ele => ele.addEventListener('click', function(){
+        this.parentNode.style.display='none';
+    }))
+}
+
+closePopups();
 
 
 
