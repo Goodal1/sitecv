@@ -43,25 +43,22 @@
 
 /* --- CUSTOM SCROLLBAR ---*/
 
-/* width */
-.xp-slider-container::-webkit-scrollbar {
+.xp-pop::-webkit-scrollbar {
     width: 3px;
   }
   
-  /* Track */
-  .xp-slider-container::-webkit-scrollbar-track {
+  .xp-pop::-webkit-scrollbar-track {
     background: var(--dark2);
     
   }
   
-  /* Handle */
-  .xp-slider-container::-webkit-scrollbar-thumb {
+
+  .xp-pop::-webkit-scrollbar-thumb {
     background:var(--red);
     width: 3vw;
   }
   
-  /* Handle on hover */
-  .xp-slider-container::-webkit-scrollbar-thumb:hover {
+  .xp-pop::-webkit-scrollbar-thumb:hover {
     background: var(--red);
   }
 

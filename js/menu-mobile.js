@@ -78,7 +78,7 @@ function fetchSliderData(url){
                         animateSlider('xp');
                         yearsHighlight('xp');
                         yearsHighlight('form')
-                        showPopups('xp');
+                        
 
                    })
     
@@ -97,7 +97,7 @@ function buildSlider(id,bdd){
         const date = `<p class="${id}-date">${bdd[i].date}</p>`;
         const titre = `<h3>${bdd[i].titre}</h3>`;
         const boite = `<p class="${id}-boite">${bdd[i].boite}</p>`;
-        const lien = `<p class="${id}-lien"><a href="${bdd[i].lien}">En savoir plus</a></p>`;
+        const lien = `<p class="${id}-lien">En savoir plus</p>`;
         const tagsList = Array.from(bdd[i].tags.split(','));
         const tags = tagsList.map(tag => `<span class="${id}-tag">${tag}</span>`).join('');
     
@@ -113,7 +113,7 @@ function buildSlider(id,bdd){
 
 function animateSlider(id){
         const sliderContainer = document.querySelector(`.${id}-slider-container`);
-        const sliderElements = document.querySelectorAll(`.${id}-slider-container div`);
+        const sliderLinks = document.querySelectorAll(`.${id}-slider-container .xp-lien`);
         let startSlide;
         let scrollLeft;
         let drag = false;
@@ -129,9 +129,9 @@ function animateSlider(id){
 
         sliderContainer.addEventListener('mouseup', function(e){
             e.preventDefault();
-            drag=false;
             sliderContainer.classList.remove('active');
             this.style.cursor='';
+            setTimeout(function(){drag=false}, 50);
             
         });
 
@@ -145,7 +145,15 @@ function animateSlider(id){
                 let walk = e.x-sliderContainer.offsetLeft;
                 const scroll=startSlide-walk;
                 sliderContainer.scrollLeft=scrollLeft+scroll;
-            } else{return}
+            } else{}
+
+        sliderLinks.forEach(ele=>ele.addEventListener('click',function(e){
+          
+                const cible = this.parentNode.dataset.experience;
+                document.querySelector(`.pop-${cible}`).style.display='block';
+            
+
+        }))
         
             
         })
@@ -176,11 +184,7 @@ function yearsHighlight(id){
 function showPopups(id){
     const xps = document.querySelectorAll(`.${id}-slider-container div`);
 
-        xps.forEach(ele=>ele.addEventListener('click',function(e){
-            const cible = this.dataset.experience;
-            document.querySelector(`.pop-${cible}`).style.display='block';
-
-        }))
+        
 
 }
     

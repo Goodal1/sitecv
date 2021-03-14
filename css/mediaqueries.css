@@ -172,3 +172,63 @@
         }
         
     }
+
+    /*--POPUPS--*/
+
+    @media screen and (max-width:970px){
+        .xp{
+            padding:5rem 0 5rem 5rem;  
+        }
+
+        .form{
+            padding:5rem;
+             
+        }
+
+        .xp-slider-container div{
+            min-width:50vw
+        }
+
+        .form-slider-container{
+            display:block;
+        }
+
+        .form-slider-container div{
+            min-width:100%;
+            display:block;
+            margin:10px 0;
+        }
+    }
+    
+    @media screen and (max-width:690px){
+    
+        .xp-pop{
+            padding:4rem 2rem;
+            
+        }
+
+        .xp-pop-content{
+            padding: 0 10px;
+        }
+
+        .xp-pop-desc p{
+            margin-top:20px 0;
+        } 
+
+        .xp-pop-desc p:nth-child(1){
+            margin-top:0;
+        }
+
+        .xp-pop-header, .xp-pop-listing{
+            display: block;
+            
+        }
+
+        .xp-proj{
+            margin-top:20px;
+            
+        }
+
+        
+        
+    }

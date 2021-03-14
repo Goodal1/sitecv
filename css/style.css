@@ -457,14 +457,15 @@ label:active:after {
 }
 
 .xp-lien{
-    text-align: right;
-}
-
-.xp-lien a{
+    margin-top:20px;
     color:var(--red);
     font-weight:900;
     font-size:14px;
-    text-decoration:none
+    cursor: pointer;
+}
+
+.xp-lien:hover{
+    color:var(--purple1);
 }
 
 .xp-frise{
@@ -659,10 +660,9 @@ label:active:after {
     left: 5%;
     width: 90%;
     height: 90%;
-  
+    box-shadow: 0px 0px 200px #7c9ce2;
     background: var(--dark2);
     border-radius: 30px;
-    border: 1px solid var(--line);
     padding: 5rem;
     box-sizing: border-box;
 }
@@ -697,8 +697,14 @@ label:active:after {
 
   .xp-close{
     position: absolute;
-    top:5px;
-    right:5px;
+    top:25px;
+    right:25px;
+    cursor:pointer;
+    transition: all .4s
+}
+
+.xp-close:hover{
+    transform:rotate(15deg);
 }
 
 .xp-pop-header{
