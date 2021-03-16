@@ -352,6 +352,7 @@ label:active:after {
 
 .prez >*{
     padding: 0 4rem;
+    line-height: 28px;
 }
 
 .prez p{
