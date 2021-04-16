@@ -1,80 +1,87 @@
 
-{
-
-"experience":[
+[
 
 	{
-		"date":"2018-2021",
+		"type":"job",
+        "date":"2018-2021",
 		"titre":"Responsable Digital",
 		"boite":"N\"Py Nouvelles Pyrénées",
-		"tags":"tag1,tag2,tag3,taglong,tagpluslong,tag5,tag6",
+		"tags":"gestion de projet,developpement,management,acquisition de trafic, analytics",
 		"lien":"maxijose.com"
 
 	},
 	{
+        "type":"job",
 		"date":"2015-2018",
 		"titre":"Assistant digital",
 		"boite":"N\"Py Nouvelles Pyrénées",
-		"tags":"tag1,tag2,tag3,taglong,tagpluslong,tag5,tag6",
+		"tags":"webdesign,html,css,js,drupal,emailing",
 		"lien":"maxijose.com"
 
 	},
 	{
-		"date":"2013-2015",
+        "type":"job",
+		"date":"2014-2015",
 		"titre":"Responsable communication",
 		"boite":"Gyromax.fr",
-		"tags":"tag1,tag2,tag3,taglong,tagpluslong,tag5,tag6",
+		"tags":"seo, sea, analytics, prestashop, wordpress, html, css",
 		"lien":"maxijose.com"
 
 	},
-	{
-		"date":"2012-2013",
-		"titre":"Réceptionniste",
-		"boite":"Hôtel Parc Beaumont",
-		"tags":"tag1,tag2,tag3,taglong,tagpluslong,tag5,tag6",
+    {
+        "type":"alternance",
+		"date":"2013-2014",
+		"titre":"Assistant communication",
+		"boite":"Gyromax.fr",
+		"tags":"print, seo, prestashop ",
 		"lien":"maxijose.com"
 
 	},
-	{
-		"date":"2011-2012",
-		"titre":"Réceptionniste - Alternance",
-		"boite":"Le RexHotel",
-		"tags":"tag1,tag2,tag3,taglong,tagpluslong,tag5,tag6",
-		"lien":"maxijose.com"
-
-	}
-
-],
-
-"formation":[
-
-	{
+    {
+        "type":"alternance",
 		"date":"2013-2014",
 		"titre":"Bachelor Web",
 		"boite":"Escen",
-		"tags":"Bordeaux, San francisco",
+		"tags":"sea, seo, webdesign, html, css, js, jquery, analytics, redaction web, suite adobe",
 		"lien":"maxijose.com"
 
 	},
 	{
+        "type":"job",
+		"date":"2012-2013",
+		"titre":"Réceptionniste",
+		"boite":"Hôtel Parc Beaumont",
+		"tags":"gestion extranets otas, gestion des reservations back office, rapports journaliers, ennui(beaucoup)",
+		"lien":"maxijose.com"
+
+	},
+    
+	{
+        "type":"alternance",
+		"date":"2011-2012",
+		"titre":"Réceptionniste - Alternance",
+		"boite":"Le RexHotel",
+		"tags":"gestion extranets otas, accueil clients, night audit",
+		"lien":"maxijose.com"
+
+	},
+    {
+        "type":"alternance",
 		"date":"2011-2012",
 		"titre":"Licence Pro Cogesht",
 		"boite":"Iut Tarbes",
-		"tags":"Tarbes",
+		"tags":"e-tourisme, yield management, marketing",
 		"lien":"maxijose.com"
 
 	},
 	{
+        "type":"formation",
 		"date":"2009-2011",
 		"titre":"Dut Gea",
 		"boite":"Iut Tarbes",
-		"tags":"Tarbes",
+		"tags":"comptabilité, finance, ennui",
 		"lien":"maxijose.com"
 
 	}
 
 ]
-
-
-
-}
